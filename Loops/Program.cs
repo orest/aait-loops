@@ -1,4 +1,5 @@
 ﻿using System;
+using Loops.Context;
 
 namespace Loops
 {
@@ -6,6 +7,15 @@ namespace Loops
     {
         static void Main(string[] args) {
             Console.WriteLine("Hello World!");
+
+            var data = new DataContext();
+            foreach (var family in data.Families)
+            {
+                Console.WriteLine(family.Nickname);                
+            }
+
+
         }
+
     }
 }

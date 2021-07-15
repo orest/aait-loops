@@ -10,11 +10,5 @@ namespace Loops.Model
     {
         public string LicenseNumber { get; set; }
         public string Job { get; set; }
-        public override string ToString()
-        {
-            //var famNm= string.Format("    {0} - {1}, {2}, LicenseNumber = {3}", Name, Age, Job, LicenseNumber);
-           return $"    {Name} - {Age}, {Job}, LicenseNumber = {LicenseNumber}";
-         
-        }
     }
 }
